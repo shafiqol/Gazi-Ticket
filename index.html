@@ -1,30 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gazi Ticket</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- daisy UI and tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body class="w-10/12 mx-auto">
+    <!-- header section -->
     <header>
-        
+      <!-- nav bur -->
+      <nav class="font-raleway">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-medium text-lg"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl font-extrabold">G-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium text-lg">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold text-xl"
+              >Bus <img src="images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="banner w-full bg-cover mt-24 lg:static">
+        <div class="w-9/12 mx-auto flex flex-col justify-center items-center text-center">
+          <h1 class="text-[#FFFFFF] text-4xl lg:text-6xl font-extrabold mt-20">
+            End-to-End Travel with <br />
+            <span class="text-[#1DD100]">G Paribahan</span>
+          </h1>
+          <p class="font-inter text-lg text-[#FFFFFF] mt-5">
+            G Paribahan offers end-to-end travel solutions for all your needs.
+            Whether you want to book a bus ticket, rent a car, or hire a driver,
+            you can do it all with G Paribahan. You can also run unit tests and
+            view the results directly within the app, thanks to the integrated
+            testing features that allow for a streamlined process.
+          </p>
+          <div class="mt-20 mb-36">
+            <button class="bg-[#1DD100] font-bold text-xl rounded-xl px-8 py-5">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10 mx-20 lg:relative bottom-14">
+        <div class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white">
+          <img class="" src="images/people.png" alt="Tickets icon">
+          <div class="">
+            <p class="font-inter font-bold text-4xl">1.7 lacks</p>
+            <p class="font-inter text-lg">Tickets sold</p>
+          </div>
+        </div>
+        <div class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white">
+          <img class="" src="images/ticket-cupon.png" alt="Tickets icon">
+          <div class="">
+            <p class="font-inter font-bold text-4xl">1.7 lacks</p>
+            <p class="font-inter text-lg">Tickets sold</p>
+          </div>
+        </div>
+        <div class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white">
+          <img class="" src="images/stoppage.png" alt="Tickets icon">
+          <div class="">
+            <p class="font-inter font-bold text-4xl">1.7 lacks</p>
+            <p class="font-inter text-lg">Tickets sold</p>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
+    <main></main>
 
-    </main>
-
-    <footer>
-
-    </footer>
-
-
+    <footer></footer>
 
     <script src="js/tailwind.config.js"></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
