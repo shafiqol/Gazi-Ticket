@@ -14,8 +14,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- header section -->
-    <header class="w-10/12 mx-auto">
+    <!-- optional page -->
+    <div id="bonuse" class="hidden w-8/12 mx-auto bg-[#F2F1F1] grid justify-center items-center rounded-2xl p-20 my-40 ">
+      <div class="card w-96 bg-base-100 shadow-xl ">
+        <figure class="px-10 pt-10">
+          <img src="images/success.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="font-bold text-2xl text-[#27AE60]">SUCCESS</h2>
+          <p class="font-bold text-xl">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you.</p>
+            <p class="font-normal text-xl">Shortly you will find a confirmation in your email.</p>
+          <div class="card-actions">
+            <button id="continue" onclick="addAndHidden(), replace()" class="btn bg-[#27AE60] text-white text-xl">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main page -->
+    <div id="home-screen" class="">
+      <!-- header section -->
+      <header class="w-10/12 mx-auto">
       <!-- nav bur -->
       <nav class="font-raleway">
         <div class="navbar bg-base-100">
@@ -161,10 +180,10 @@
       <div class="my-10 text-center mx-auto w-full">
         <button class="btn btn-outline btn-success">See All Offers</button>
       </div>
-    </header>
-    <!-- main section -->
+      </header>
+      <!-- main section -->
 
-    <main class="font-raleway">
+      <main class="font-raleway">
       <!-- functional section -->
       <div class="functional bg-[#F7F8F8] mt-20 pb-20">
         <div class="w-6/12 text-center mx-auto mt-20">
@@ -744,7 +763,7 @@
                     />
                   </div>
                   <div class="flex items-center justify-between">
-                    <button
+                    <button onclick="addAndHidden()"
                       class="bg-[#1DD100] hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
                       type="button"
                     >
@@ -757,9 +776,9 @@
           </div>
         </div>
       </div>
-    </main>
+      </main>
 
-    <footer class="bg-[#030712]">
+      <footer class="bg-[#030712]">
       <div class="mx-auto p-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
@@ -813,7 +832,8 @@
           </ul>
         </div>
       </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="js/utility.js"></script>
     <script src="js/tailwind.config.js"></script>

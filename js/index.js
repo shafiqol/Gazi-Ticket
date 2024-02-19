@@ -52,3 +52,12 @@ apply.addEventListener("click", function (e) {
 		setInnerText("grand-total", totalPrice - totalPrice * 0.15);
 	} else alert("please select right coupon");
 })
+
+function addAndHidden() {
+    hiddenElementById('home-screen');
+    showElementById('bonuse');
+}
+function replace() {
+    hiddenElementById('bonuse');
+    showElementById('home-screen');
+}

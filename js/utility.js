@@ -27,16 +27,14 @@ function getElementTextById(elementId) {
 	return text;
 }
 
-// const newDiv = document.createElement('div');
-// newDiv.setAttribute('class', 'flex justify-between');
-// const tag1 = document.createElement('p');
-// tag1.innerText = btn;
-// newDiv.appendChild(tag1);
-// const tag2 = document.createElement('p');
-// tag2.innerText = 'Economoy';
-// newDiv.appendChild(tag2);
-// const tag3 = document.createElement('p');
-// tag3.innerText = ticketPrice;
-// newDiv.appendChild(tag3);
-// const bookingSit = document.getElementById('booking-sit');
-// bookingSit.appendChild(newDiv);
+function hiddenElementById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+}
+
+function showElementById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden')
+}
+
+
