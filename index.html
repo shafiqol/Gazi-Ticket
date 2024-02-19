@@ -199,7 +199,7 @@
                 <div class="">
                   <a
                     class="btn bg-[#1DD1001A] font-inter text-[#1DD100] font-medium text-lg"
-                    ><img src="images/seat-green.png" alt="" /><span>40</span
+                    ><img src="images/seat-green.png" alt="" /><span id="seat-left">40</span
                     >Seats left</a
                   >
                 </div>
@@ -254,7 +254,7 @@
             <div class="w-3/12 text-center">
               <img class="mx-auto" src="images/fare.png" alt="" />
               <div class="mt-10">
-                <p class="font-extrabold text-4xl">550 Taka</p>
+                <p class="font-extrabold text-4xl"> <span id="per-ticket-price">550</span> Taka</p>
                 <p class="font-light text-xl">Per Seat</p>
               </div>
             </div>
@@ -301,11 +301,10 @@
                     <tr class="flex gap-2">
                       <td><button class="font-bold py-2 px-2">A</button></td>
                       <td>
-                        <button
-                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        <button class="seat-button button-bg col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
                         >
                           A1
-                        </button>
+                        </buttonclass=>
                       </td>
                       <td>
                         <button
@@ -647,7 +646,7 @@
                 >
                   <div class="flex gap-2 font-inter font-medium text-base">
                     <p>Seat</p>
-                    <span class="bg-[#1DD100] text-white px-2 rounded-lg"
+                    <span id="seat-count" class="bg-[#1DD100] text-white px-2 rounded-lg"
                       >0</span
                     >
                   </div>
@@ -659,18 +658,8 @@
                   </div>
                 </div>
                 <hr class="hr mt-2" />
-                <div
-                  class="grid gap-10 grid-cols-3 justify-between mt-4 items-center"
-                >
-                  <div class="font-inter font-medium text-base">
-                    <p>Seat</p>
-                  </div>
-                  <div class="font-inter font-medium text-base">
-                    <p>Class</p>
-                  </div>
-                  <div class="font-inter font-medium text-base">
-                    <p>Price</p>
-                  </div>
+                <div id="seat-details">
+
                 </div>
                 <hr class="hr mt-2" />
                 <div class="grid grid-cols-2 justify-between">
@@ -685,13 +674,12 @@
                 </div>
                 <div>
                   <div class="flex items-center border-2 rounded-lg py-2">
-                    <input
-                      class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                    <input id="input-coupon" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                       type="text"
                       placeholder="Have any coupon?"
                       aria-label="Coupon"
                     />
-                    <button
+                    <button id="apply"
                       class="flex-shrink-0 bg-[#1DD100] hover:bg-teal-700 border-[#1DD100] hover:border-teal-700 text-sm border-4 text-white py- px-2 mr-2 rounded"
                       type="button"
                     >
@@ -827,6 +815,7 @@
       </div>
     </footer>
 
+    <script src="js/utility.js"></script>
     <script src="js/tailwind.config.js"></script>
     <script src="js/index.js"></script>
   </body>
