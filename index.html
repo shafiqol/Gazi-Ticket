@@ -13,9 +13,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-10/12 mx-auto">
+  <body>
     <!-- header section -->
-    <header>
+    <header class="w-10/12 mx-auto">
       <!-- nav bur -->
       <nav class="font-raleway">
         <div class="navbar bg-base-100">
@@ -66,55 +66,766 @@
       </nav>
 
       <!-- banner section -->
-      <section class="banner w-full bg-cover mt-24 lg:static">
-        <div class="w-9/12 mx-auto flex flex-col justify-center items-center text-center">
-          <h1 class="text-[#FFFFFF] text-4xl lg:text-6xl font-extrabold mt-20">
-            End-to-End Travel with <br />
-            <span class="text-[#1DD100]">G Paribahan</span>
-          </h1>
-          <p class="font-inter text-lg text-[#FFFFFF] mt-5">
-            G Paribahan offers end-to-end travel solutions for all your needs.
-            Whether you want to book a bus ticket, rent a car, or hire a driver,
-            you can do it all with G Paribahan. You can also run unit tests and
-            view the results directly within the app, thanks to the integrated
-            testing features that allow for a streamlined process.
-          </p>
-          <div class="mt-20 mb-36">
-            <button class="bg-[#1DD100] font-bold text-xl rounded-xl px-8 py-5">
-              Buy Tickets
-            </button>
+      <section class="mt-24 lg:static">
+        <div
+          class="banner hero"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="text-center">
+            <div class="max-w-[80%] mx-auto">
+              <h1
+                class="text-[#FFFFFF] text-4xl lg:text-6xl font-extrabold mt-28"
+              >
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">G Paribahan</span>
+              </h1>
+              <p class="font-inter text-lg mt-4 text-white">
+                G Paribahan offers end-to-end travel solutions for all your
+                needs. Whether you want to book a bus ticket, rent a car, or
+                hire a driver, you can do it all with G Paribahan. You can also
+                run unit tests and view the results directly within the app,
+                thanks to the integrated testing features that allow for a
+                streamlined process.
+              </p>
+              <button id="scrollToMain" class="btn bg-[#1DD100] mt-10 mb-40 font-bold text-xl">
+                Buy Tickets
+              </button>
+            </div>
           </div>
         </div>
       </section>
-      
-      <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10 mx-20 lg:relative bottom-14">
-        <div class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white">
-          <img class="" src="images/people.png" alt="Tickets icon">
+
+      <div
+        class="grid md:grid-cols-1 lg:grid-cols-3 gap-5 mx-20 lg:relative md:bottom-14"
+      >
+        <div
+          class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white"
+        >
+          <img class="" src="images/people.png" alt="Tickets icon" />
           <div class="">
             <p class="font-inter font-bold text-4xl">1.7 lacks</p>
             <p class="font-inter text-lg">Tickets sold</p>
           </div>
         </div>
-        <div class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white">
-          <img class="" src="images/ticket-cupon.png" alt="Tickets icon">
+        <div
+          class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white"
+        >
+          <img class="" src="images/ticket-cupon.png" alt="Tickets icon" />
           <div class="">
             <p class="font-inter font-bold text-4xl">1.7 lacks</p>
             <p class="font-inter text-lg">Tickets sold</p>
           </div>
         </div>
-        <div class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white">
-          <img class="" src="images/stoppage.png" alt="Tickets icon">
+        <div
+          class="banner-card flex items-center justify-center gap-2 rounded-3xl p-5 bg-white"
+        >
+          <img class="" src="images/stoppage.png" alt="Tickets icon" />
           <div class="">
             <p class="font-inter font-bold text-4xl">1.7 lacks</p>
             <p class="font-inter text-lg">Tickets sold</p>
           </div>
         </div>
       </div>
+      <h3 class="font-bold text-4xl text-center">Best offers for you</h3>
+      <!-- best offer cards -->
+      <div class="grid grid-cols-2 gap-10">
+        <div class="card bg-[#FFBF0F] mt-10 rounded-3xl">
+          <div class="card-body grid grid-cols-3 justify-center items-center">
+            <div>
+              <h2 class="card-title font-bold text-4xl">15% OFF</h2>
+              <p class="font-semibold text-lg">on your next purchase</p>
+              <p class="font-light text-sm">use by January 2024</p>
+            </div>
+            <img class="" src="images/cupon-devider.png" alt="" />
+            <div>
+              <p class="font-bold text-4xl">NEW15</p>
+              <p class="font-light text-sm">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-[#F78C9C] mt-10 rounded-3xl">
+          <div class="card-body grid grid-cols-3 justify-center items-center">
+            <div>
+              <h2 class="card-title font-bold text-4xl">20% OFF</h2>
+              <p class="font-semibold text-lg">on your next purchase</p>
+              <p class="font-light text-sm">use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div>
+              <p class="font-bold text-4xl">Couple 20</p>
+              <p class="font-light text-sm">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-10 text-center mx-auto w-full">
+        <button class="btn btn-outline btn-success">See All Offers</button>
+      </div>
     </header>
+    <!-- main section -->
 
-    <main></main>
+    <main class="font-raleway">
+      <!-- functional section -->
+      <div class="functional bg-[#F7F8F8] mt-20 pb-20">
+        <div class="w-6/12 text-center mx-auto mt-20">
+          <h3 class="font-bold text-4xl text-center">G Paribahan</h3>
+          <p class="font-inter text-lg pt-6">
+            So, what are you waiting for? Join the millions of satisfied
+            customers who have chosen P Paribahan for their travel needs. Visit
+            their website or download their app today and get ready to
+            experience the best of Bangladesh with P Paribahan. Don’t forget to
+            click on the “Buy Tickets” button below and enjoy a special discount
+            on your first booking.
+          </p>
+        </div>
+        <!-- buss name and route card -->
+        <div class="w-10/12 mx-auto mt-12">
+          <div
+            class="rounded-3xl p-10 bg-white flex items-center justify-between"
+          >
+            <div class="w-3/5">
+              <div class="flex justify-between">
+                <div class="flex gap-2">
+                  <img class="" src="images/bus-logo.png" alt="Tickets icon" />
+                  <div class="">
+                    <p class="font-inter font-bold text-3xl">
+                      Greenline Paribahan
+                    </p>
+                    <p class="font-inter text-lg">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <a
+                    class="btn bg-[#1DD1001A] font-inter text-[#1DD100] font-medium text-lg"
+                    ><img src="images/seat-green.png" alt="" /><span>40</span
+                    >Seats left</a
+                  >
+                </div>
+              </div>
+              <div class="bg-[#F7F8F8] rounded-3xl p-5 mt-8">
+                <div class="flex justify-between">
+                  <div>
+                    <p class="font-semibold text-lg">Route</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">Dhaka - Barisal</p>
+                  </div>
+                </div>
+                <hr class="hr mt-2" />
+                <div class="flex justify-between mt-4">
+                  <div>
+                    <p class="font-semibold text-lg">Departure Time</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">9:00 PM</p>
+                  </div>
+                </div>
+                <hr class="hr mt-2" />
+                <div class="flex justify-between mt-4">
+                  <div>
+                    <button
+                      class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-inter font-medium text-base"
+                    >
+                      Boarding Point - Laxmipur
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-inter font-medium text-base"
+                    >
+                      Dropping Point - Bogura
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-inter font-medium text-base"
+                    >
+                      Est. Time - 11 Hour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/12">
+              <img class="" src="images/info-devider.png" alt="" />
+            </div>
+            <div class="w-3/12 text-center">
+              <img class="mx-auto" src="images/fare.png" alt="" />
+              <div class="mt-10">
+                <p class="font-extrabold text-4xl">550 Taka</p>
+                <p class="font-light text-xl">Per Seat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- seats section -->
+        <div id="main-section" class="w-10/12 mx-auto mt-6">
+          <div
+            class="rounded-3xl p-10 bg-white flex gap-6 items-center justify-between"
+          >
+            <div class="w-6/12">
+              <div class="rounded-3xl p-5">
+                <div class="flex gap-2">
+                  <div class="pb-5">
+                    <p class="font-bold text-3xl">Select Your Seat</p>
+                  </div>
+                </div>
+                <hr class="hr" />
+                <div class="flex justify-between mt-4">
+                  <div class="flex gap-2">
+                    <img src="images/seat-gray.png" alt="" />
+                    <p class="font-inter font-medium text-lg">Available</p>
+                  </div>
+                  <div>
+                    <div class="flex gap-2">
+                      <img src="images/seat-green-filled.png" alt="" />
+                      <p class="font-inter font-medium text-lg text-[#1DD100]">
+                        Selected
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr mt-2" />
+                <div class="my-6 grid justify-end">
+                  <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                    <img src="images/stearing.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <!-- seats -->
+              <div>
+                <table class="mx-auto grid grid-cols-2 gap-10">
+                  <tbody class="grid gap-4">
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">A</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          A1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          A2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">B</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          B1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          B2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">C</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          C1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          C2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">D</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          D1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          D2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">E</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          E1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          E2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">F</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          F1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          F2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">G</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          G1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          G2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">H</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          H1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          H2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-3">I</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          I1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          I2
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td><button class="font-bold py-2 px-2">J</button></td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          J1
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          J2
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody class="grid gap-4">
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          A3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          A4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          B3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          B4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          C3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          C4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          D3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          D4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          E3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          E4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          F3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          F4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          G3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          G4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          H3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          H4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          I3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          I4
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="flex gap-2">
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          J3
+                        </button>
+                      </td>
+                      <td>
+                        <button
+                          class="seat-button col-span-1 bg-gray-200 text-gray-700 font-bold py-2 px-10 rounded"
+                        >
+                          J4
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- traveler form -->
+            <div class="w-6/12">
+              <div class="pb-5">
+                <p class="font-bold text-3xl">Select Your Seat</p>
+              </div>
+              <hr class="hr mt-2" />
+              <!-- total form -->
+              <div class="bg-[#F7F8F8] rounded-3xl p-5 mt-8">
+                <div
+                  class="grid gap-10 grid-cols-3 justify-between items-center"
+                >
+                  <div class="flex gap-2 font-inter font-medium text-base">
+                    <p>Seat</p>
+                    <span class="bg-[#1DD100] text-white px-2 rounded-lg"
+                      >0</span
+                    >
+                  </div>
+                  <div class="font-inter font-medium text-base">
+                    <p>Class</p>
+                  </div>
+                  <div class="font-inter font-medium text-base">
+                    <p>Price</p>
+                  </div>
+                </div>
+                <hr class="hr mt-2" />
+                <div
+                  class="grid gap-10 grid-cols-3 justify-between mt-4 items-center"
+                >
+                  <div class="font-inter font-medium text-base">
+                    <p>Seat</p>
+                  </div>
+                  <div class="font-inter font-medium text-base">
+                    <p>Class</p>
+                  </div>
+                  <div class="font-inter font-medium text-base">
+                    <p>Price</p>
+                  </div>
+                </div>
+                <hr class="hr mt-2" />
+                <div class="grid grid-cols-2 justify-between">
+                  <div class="py-5">
+                    <p class="font-inter font-medium text-base">Total Price</p>
+                  </div>
+                  <div class="py-5">
+                    <p class="font-inter font-medium text-base">
+                      BDT <span id="total-price">0</span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex items-center border-2 rounded-lg py-2">
+                    <input
+                      class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                      type="text"
+                      placeholder="Have any coupon?"
+                      aria-label="Coupon"
+                    />
+                    <button
+                      class="flex-shrink-0 bg-[#1DD100] hover:bg-teal-700 border-[#1DD100] hover:border-teal-700 text-sm border-4 text-white py- px-2 mr-2 rounded"
+                      type="button"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 justify-between">
+                  <div class="py-5">
+                    <p class="font-inter font-medium text-base">Grand Total</p>
+                  </div>
+                  <div class="py-5">
+                    <p class="font-inter font-medium text-base">
+                      BDT <span id="grand-total">0</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- register form -->
+              <div class="w-full">
+                <form class="rounded px-8 pt-6 pb-8 mb-4">
+                  <div class="mb-4">
+                    <label
+                      class="block text-gray-700 text-sm font-bold mb-2"
+                      for="name"
+                    >
+                      Passenger Name*
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="name"
+                      type="text"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      class="block text-gray-700 text-sm font-bold mb-2"
+                      for="phone"
+                    >
+                      Phone Number*
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="phone"
+                      type="tel"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label
+                      class="block text-gray-700 text-sm font-bold mb-2"
+                      for="email"
+                    >
+                      Email ID
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email id"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <button
+                      class="bg-[#1DD100] hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                      type="button"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <footer></footer>
+    <footer class="bg-[#030712]">
+      <div class="mx-auto p-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://flowbite.com/"
+            class="grid gap-2"
+          >
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >G-Ticket</span
+            >
+            <br>
+            <span
+              class="block text-sm text-gray-500 sm:text-start dark:text-gray-400"
+              >P-Ticket is a digital platform to make your <br> daily commuting better.</span
+            >
+          </a>
+          <a
+            href="https://flowbite.com/"
+            class=""
+          >
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >Download our appt</span
+            >
+            <br>
+            <div class="mt-4"><img src="images/Group 104.svg" alt=""></div>
+          </a>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span
+            class="block text-sm text-gray-500 sm:text-start dark:text-gray-400"
+            >@all rights reserved, P-Ticket services limited.2024</span
+          >
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Terms & condition</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Return & refund policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/tailwind.config.js"></script>
     <script src="js/index.js"></script>
